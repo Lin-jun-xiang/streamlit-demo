@@ -52,7 +52,7 @@ st.subheader('Raw data')
 st.write(data)
 ```
 
-![](img/2023-05-28-12-56-59.png)
+<img src="img/2023-05-28-12-56-59.png" width="60%" />
 
 ## 繪製直方圖
 **直方圖與 Uber 的數據集一起使用可以幫助我們確定什麼時候最繁忙的接送時間**
@@ -68,7 +68,7 @@ hist_values = np.histogram(
 st.bar_chart(hist_values)
 ```
 
-![](img/2023-05-28-13-12-07.png)
+<img src="img/2023-05-28-13-12-07.png" width="60%" />
 
 ## 在地圖上繪製數據
 * **顯示 Uber 接送位置**
@@ -86,7 +86,7 @@ st.subheader(f'Map of all pickups at {hour_to_filter}:00')
 st.map(filtered_data)
 ```
 
-![](img/2023-05-28-13-12-23.png)
+<img src="img/2023-05-28-13-12-23.png" width="60%" />
 
 ## 使用 Slider 過濾結果
 在前一節中，我們過濾 Uber 巔峰時間的位置，現在我們想要讓使用者可以自己篩選數據:
@@ -100,7 +100,7 @@ st.subheader(f'Map of all pickups at {hour_to_filter}:00')
 st.map(filtered_data)
 ```
 
-![](img/2023-05-28-13-16-05.png)
+<img src="img/2023-05-28-13-16-05.png" width="60%" />
 
 ## 使用按鈕切換數據
 滑塊只是動態更改應用程序組成的一種方式。讓我們使用該`st.checkbox`函數向您的應用程序添加一個複選框。我們將使用此復選框來**顯示/隱藏**應用程序頂部的原始數據表:
@@ -112,7 +112,12 @@ if st.checkbox('Show raw data'):
     st.write(data)
 ```
 
-![](img/2023-05-28-13-19-57.png)
+<img src="img/2023-05-28-13-19-57.png" width="60%" />
 
 ## 分享應用程序
 * 可以使用 Streamlit Community Cloud 免費部屬、管理和共享應用程序
+* 它通過 3 個簡單的步驟工作：
+    * 將您的應用程序放在公共 GitHub 存儲庫中（並確保它有一個 `requirements.txt`！）
+    * 登錄[`share.streamlit.io`](https://share.streamlit.io/)
+    * 單擊“部署應用程序”，然後粘貼您的 GitHub URL
+    * 完成部屬[應用程序](https://lin-jun-xiang-streamlit-demo-under-pickups-beygga.streamlit.app/)

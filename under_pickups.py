@@ -3,6 +3,12 @@ import pandas as pd
 import numpy as np
 
 
+# 定義 page name
+st.set_page_config(
+        page_title="Streamlit Demo App",
+)
+
+
 # 標題
 st.title('Uber pickups in NYC')
 
